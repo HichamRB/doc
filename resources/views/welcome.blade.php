@@ -14,8 +14,8 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
-                margin: 20px;
-                margin-top: 100px;
+                margin: 0;
+                padding: 0;
             }
             .header {
                 text-align: center;
@@ -29,18 +29,26 @@
                 padding: 10px;
                 border-bottom: 1px solid #ccc;
             }
+            .table-container {
+                margin-top: 150px;
+                padding-top: 40px;
+            }
             .table {
-                margin-top: 100px;
                 width: 100%;
                 border-collapse: collapse;
-                margin-bottom: 20px;
+                margin-bottom: 80px;
             }
             .table th, .table td {
                 border: 1px solid #000;
                 padding: 8px;
             }
+            .table tr {
+                page-break-inside: avoid;
+            }
             .total {
                 text-align: right;
+                bottom: 20px;
+                right: 20px;
             }
             .footer {
                 position: fixed;
@@ -57,6 +65,7 @@
         <p>Client Name: Your Client</p>
     </div>
 
+    <div class="table-container">
         <table class="table">
             <thead>
             <tr>
@@ -75,7 +84,7 @@
             @endforeach
             </tbody>
         </table>
-
+    </div>
     <div class="total">
         <strong>Total Price: 400</strong>
     </div>
