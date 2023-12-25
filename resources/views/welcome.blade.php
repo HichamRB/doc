@@ -75,6 +75,9 @@
         <h1>Invoice</h1>
         <p>Client Name: Your Client</p>
     </div>
+    <div class="footer">
+        <p>Company Name | Address | Contact Information</p>
+    </div>
 
     <div class="table-container">
         <table class="table">
@@ -100,8 +103,6 @@
         <strong>Total Price: 400</strong>
     </div>
 
-    <div class="footer">
-        <p>Company Name | Address | Contact Information</p>
-    </div>
+
     </body>
 </html>
