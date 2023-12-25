@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Barryvdh\DomPDF\PDF;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\View; // Import the View facade
+use Illuminate\Support\Facades\View;
 
 class WelcomeController extends Controller
 {

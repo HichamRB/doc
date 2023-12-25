@@ -12,6 +12,9 @@
 
 
         <style>
+            @page {
+                margin-top: 200px;
+            }
             body {
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -29,9 +32,19 @@
                 padding: 10px;
                 border-bottom: 1px solid #ccc;
             }
+            .header {
+                text-align: center;
+                position: fixed;
+                margin-top: -200px;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                z-index: 100;
+                background-color: #fff;
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+            }
             .table-container {
-                margin-top: 150px;
-                padding-top: 40px;
             }
             .table {
                 width: 100%;
@@ -41,9 +54,6 @@
             .table th, .table td {
                 border: 1px solid #000;
                 padding: 8px;
-            }
-            .table tr {
-                page-break-inside: avoid;
             }
             .total {
                 text-align: right;
