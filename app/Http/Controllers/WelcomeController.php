@@ -12,7 +12,7 @@ class WelcomeController extends Controller
     {
         $data = [];
 
-        for ($i = 1; $i <= 50; $i++) {
+        for ($i = 1; $i <= 59; $i++) {
             $data[] = [
                 'id' => ($i),
                 'name' => 'Product ' . $i,

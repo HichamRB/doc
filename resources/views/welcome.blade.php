@@ -59,6 +59,7 @@
                 text-align: right;
                 bottom: 20px;
                 right: 20px;
+                margin-bottom: 60px;
             }
             .footer {
                 position: fixed;
