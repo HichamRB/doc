@@ -67,29 +67,32 @@
     </div>
 
     <div class="table-container">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Product ID</th>
-                <th>Product Name</th>
-                <th>Price</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($data as $item)
+        <div>
+            <table class="table">
+                <thead>
                 <tr>
-                    <td>{{ $item['id'] }}</td>
-                    <td>{{ $item['name'] }}</td>
-                    <td>{{ $item['price'] }}</td>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
                 </tr>
+                </thead>
+                <tbody>
+                @foreach($data as $item)
+                    <tr>
+                        <td>{{ $item['id'] }}</td>
+                        <td>{{ $item['name'] }}</td>
+                        <td>{{ $item['price'] }}</td>
+                    </tr>
+                @endforeach
 
-            @endforeach
-
-            </tbody>
-        </table>
-        <div class="total">
-            <strong>Total Price: 400</strong>
+                </tbody>
+            </table>
+            <div class="total">
+                <strong>Total Price: 400</strong>
+            </div>
         </div>
+
+
     </div>
 
 
