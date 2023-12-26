@@ -31,13 +31,17 @@
             .table-container {
 
             }
+            table{
+                border: white 2px solid;
+            }
             .table {
+                border:  2px solid black;
                 width: 100%;
                 border-collapse: collapse;
-                margin-bottom: 80px;
+                margin-bottom: 40px;
             }
-            .table th, .table td {
-                border: none;
+            table th, table td {
+                border:  2px solid black;
                 padding: 8px;
                 text-align: center;
             }
@@ -91,10 +95,6 @@
                 <strong>Total Price: 400</strong>
             </div>
         </div>
-
-
     </div>
-
-
     </body>
 </html>

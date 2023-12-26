@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\View;
 
 class WelcomeController extends Controller
 {
-    function generateRandomSentence() {
+    /*function generateRandomSentence() {
         $subjects = ['The cat', 'A dog', 'A red car', 'My friend', 'The book', 'A tree'];
         $verbs = ['runs', 'jumps', 'sleeps', 'eats', 'reads', 'flies'];
         $adverbs = ['quickly', 'slowly', 'loudly', 'quietly', 'happily', 'sadly'];
@@ -32,16 +32,17 @@ class WelcomeController extends Controller
         ];
 
         return $patterns[array_rand($patterns)];
-    }
+    }*/
 
     public function welcomePDF()
     {
         $data = [];
 
-        for ($i = 1; $i <=65; $i++) {
+        for ($i = 1; $i <=58; $i++) {
             $data[] = [
                 'id' => ($i),
-                'name' => $this->generateRandomSentence(),
+                'name' => 'Product ' . $i,
+//                'name' => $this->generateRandomSentence(),
                 'price' => rand(10, 100),
             ];
         }
