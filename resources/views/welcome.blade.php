@@ -6,11 +6,6 @@
 
         <title>Doc</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
-
         <style>
             @page {
                 margin-top: 200px;
@@ -22,20 +17,9 @@
             }
             .header {
                 text-align: center;
-                margin-bottom: 20px;
-                position: fixed;
-                top: 20px;
-                left: 20px;
-                right: 20px;
-                z-index: 100;
-                background-color: #fff;
-                padding: 10px;
-                border-bottom: 1px solid #ccc;
-            }
-            .header {
-                text-align: center;
                 position: fixed;
                 margin-top: -200px;
+                margin-bottom: 20px;
                 top: 20px;
                 left: 20px;
                 right: 20px;
@@ -45,6 +29,7 @@
                 border-bottom: 1px solid #ccc;
             }
             .table-container {
+
             }
             .table {
                 width: 100%;
@@ -52,8 +37,9 @@
                 margin-bottom: 80px;
             }
             .table th, .table td {
-                border: 1px solid #000;
+                border: none;
                 padding: 8px;
+                text-align: center;
             }
             .total {
                 text-align: right;
@@ -77,6 +63,7 @@
     </div>
     <div class="footer">
         <p>Company Name | Address | Contact Information</p>
+
     </div>
 
     <div class="table-container">
@@ -95,12 +82,14 @@
                     <td>{{ $item['name'] }}</td>
                     <td>{{ $item['price'] }}</td>
                 </tr>
+
             @endforeach
+
             </tbody>
         </table>
-    </div>
-    <div class="total">
-        <strong>Total Price: 400</strong>
+        <div class="total">
+            <strong>Total Price: 400</strong>
+        </div>
     </div>
 
 

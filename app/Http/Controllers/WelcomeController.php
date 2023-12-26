@@ -12,7 +12,7 @@ class WelcomeController extends Controller
     {
         $data = [];
 
-        for ($i = 1; $i <= 59; $i++) {
+        for ($i = 1; $i <= 58; $i++) {
             $data[] = [
                 'id' => ($i),
                 'name' => 'Product ' . $i,
@@ -25,4 +25,20 @@ class WelcomeController extends Controller
 
         return $pdf->stream('welcome.pdf');
     }
+
+    /*public function welcomePDF()
+    {
+        $data = [];
+
+        for ($i = 1; $i <= 59; $i++) {
+            $data[] = [
+                'id' => $i,
+                'name' => 'Product ' . $i,
+                'price' => rand(10, 100),
+            ];
+        }
+
+        return view('welcome', compact('data'));
+    }*/
+
 }
