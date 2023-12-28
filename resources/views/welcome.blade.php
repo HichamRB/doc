@@ -8,7 +8,7 @@
 
         <style>
             @page {
-                margin-top: 200px;
+                margin-top: {{ $headerHeight }}px;
             }
             body {
                 font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@
             .header {
                 text-align: center;
                 position: fixed;
-                margin-top: -200px;
+                margin-top: -{{ $headerHeight }}px;
                 margin-bottom: 20px;
                 top: 20px;
                 left: 20px;
@@ -29,7 +29,7 @@
                 border-bottom: 1px solid #ccc;
             }
             .table-container {
-
+                margin-bottom: {{ $contentBottom }}px;
             }
             table{
                 border: white 2px solid;
@@ -46,14 +46,15 @@
                 text-align: center;
             }
             .total {
-                text-align: right;
-                bottom: 20px;
+                text-align: right;position: absolute;
+                bottom: {{$footerHeight+ 20}}px;
                 right: 20px;
                 margin-bottom: 60px;
             }
             .footer {
                 position: fixed;
                 bottom: 20px;
+                height: {{ $footerHeight }}px;
                 left: 0;
                 right: 0;
                 text-align: center;
@@ -66,8 +67,10 @@
         <p>Client Name: Your Client</p>
     </div>
     <div class="footer">
-        <p>Company Name | Address | Contact Information</p>
 
+
+
+        <p>Company Name | Address | Contact Information</p>
     </div>
 
     <div class="table-container">
@@ -88,13 +91,13 @@
                         <td>{{ $item['price'] }}</td>
                     </tr>
                 @endforeach
-
                 </tbody>
             </table>
-            <div class="total">
-                <strong>Total Price: 400</strong>
-            </div>
+
         </div>
+    </div>
+    <div class="total">
+        <strong>Total Price: 200</strong>
     </div>
     </body>
 </html>

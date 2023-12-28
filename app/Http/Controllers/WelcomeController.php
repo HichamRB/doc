@@ -37,6 +37,7 @@ class WelcomeController extends Controller
     public function welcomePDF()
     {
         $data = [];
+        $totalProducts = 0;
 
         for ($i = 1; $i <=58; $i++) {
             $data[] = [
@@ -45,10 +46,16 @@ class WelcomeController extends Controller
 //                'name' => $this->generateRandomSentence(),
                 'price' => rand(10, 100),
             ];
+            $totalProducts++;
         }
 
+        $footerSize =1;
+        $headerSize = 2.62;
+        $headerHeight = $headerSize * 48.569 + 72.528;
+        $footerHeight = $footerSize * 48.569 + 72.528;
+        $contentBottom = $footerSize * 22.6705 + 77.1795;
         $pdf = App::make('dompdf.wrapper');
-        $pdf->loadHTML(View::make('welcome', compact('data')));
+        $pdf->loadHTML(View::make('welcome', compact('data','headerHeight','footerHeight','contentBottom','totalProducts')));
 
         return $pdf->stream('welcome.pdf');
     }
