@@ -38,7 +38,7 @@
                 border:  2px solid black;
                 width: 100%;
                 border-collapse: collapse;
-                margin-bottom: 41px;
+                margin-bottom: 40px;
             }
             table th, table td {
                 border:  2px solid black;
