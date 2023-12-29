@@ -38,14 +38,14 @@
                 border:  2px solid black;
                 width: 100%;
                 border-collapse: collapse;
-                margin-bottom: 40px;
+                margin-bottom: 41px;
             }
             table th, table td {
                 border:  2px solid black;
                 padding: 8px;
                 text-align: center;
             }
-            .total {
+            .total{
                 text-align: right;position: absolute;
                 bottom: {{$footerHeight+ 20}}px;
                 right: 20px;
