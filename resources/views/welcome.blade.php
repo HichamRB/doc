@@ -35,10 +35,10 @@
                 border: white 2px solid;
             }
             .table {
-                border  2px solid black;
+                border:  2px solid black;
                 width: 100%;
                 border-collapse: collapse;
-                margin-bottom: 40px;
+                margin-bottom: 41px;
             }
             table th, table td {
                 border:  2px solid black;
